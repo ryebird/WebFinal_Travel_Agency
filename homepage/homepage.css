@@ -58,7 +58,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 5rem;
     padding: 5%;
 }
 
@@ -140,10 +139,16 @@ body {
 }
 
 .gallery .box img {
+    
     width: 100%;
     border-radius: 2rem;
     margin-bottom: 1rem;
 }
+
+.gallery .box img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
 .gallery .box span {
     font-size: 1.4rem;
     color: grey; 
@@ -230,6 +235,9 @@ body {
 .btn-desktop {
   display: none;
 }
+
+/* smth */
+
 
 @media (max-width: 991.98px) {
   .btn-mobile {
